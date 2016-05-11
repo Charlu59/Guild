@@ -15,7 +15,18 @@
 		AB050C261CDA33530002A331 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB050C231CDA33530002A331 /* RootViewController.m */; };
 		AB050C271CDA33530002A331 /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB050C251CDA33530002A331 /* HomeViewController.m */; };
 		AB050C2A1CDA34080002A331 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB050C291CDA34080002A331 /* CoreBluetooth.framework */; };
+		AB0C78B61CE3538C00ADE4A5 /* Oglo2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0C78B51CE3538C00ADE4A5 /* Oglo2Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB0C78B81CE3538C00ADE4A5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB050C031CDA33380002A331 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB050C0A1CDA33380002A331;
+			remoteInfo = Oglo2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		AB050C0B1CDA33380002A331 /* Oglo2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Oglo2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -32,6 +43,9 @@
 		AB050C241CDA33530002A331 /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		AB050C251CDA33530002A331 /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		AB050C291CDA34080002A331 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		AB0C78B31CE3538C00ADE4A5 /* Oglo2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Oglo2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB0C78B51CE3538C00ADE4A5 /* Oglo2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Oglo2Tests.m; sourceTree = "<group>"; };
+		AB0C78B71CE3538C00ADE4A5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,14 +57,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB0C78B01CE3538C00ADE4A5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		AB050C021CDA33380002A331 = {
 			isa = PBXGroup;
 			children = (
-				AB050C291CDA34080002A331 /* CoreBluetooth.framework */,
 				AB050C0D1CDA33380002A331 /* Oglo2 */,
+				AB0C78B41CE3538C00ADE4A5 /* Oglo2Tests */,
 				AB050C0C1CDA33380002A331 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -59,6 +80,7 @@
 			isa = PBXGroup;
 			children = (
 				AB050C0B1CDA33380002A331 /* Oglo2.app */,
+				AB0C78B31CE3538C00ADE4A5 /* Oglo2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -92,10 +114,20 @@
 		AB050C281CDA33620002A331 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AB050C291CDA34080002A331 /* CoreBluetooth.framework */,
 				AB050C161CDA33380002A331 /* Assets.xcassets */,
 				AB050C181CDA33380002A331 /* LaunchScreen.storyboard */,
 			);
 			name = Resources;
+			sourceTree = "<group>";
+		};
+		AB0C78B41CE3538C00ADE4A5 /* Oglo2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				AB0C78B51CE3538C00ADE4A5 /* Oglo2Tests.m */,
+				AB0C78B71CE3538C00ADE4A5 /* Info.plist */,
+			);
+			path = Oglo2Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -118,6 +150,24 @@
 			productReference = AB050C0B1CDA33380002A331 /* Oglo2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		AB0C78B21CE3538C00ADE4A5 /* Oglo2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB0C78BA1CE3538C00ADE4A5 /* Build configuration list for PBXNativeTarget "Oglo2Tests" */;
+			buildPhases = (
+				AB0C78AF1CE3538C00ADE4A5 /* Sources */,
+				AB0C78B01CE3538C00ADE4A5 /* Frameworks */,
+				AB0C78B11CE3538C00ADE4A5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB0C78B91CE3538C00ADE4A5 /* PBXTargetDependency */,
+			);
+			name = Oglo2Tests;
+			productName = Oglo2Tests;
+			productReference = AB0C78B31CE3538C00ADE4A5 /* Oglo2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -129,6 +179,10 @@
 				TargetAttributes = {
 					AB050C0A1CDA33380002A331 = {
 						CreatedOnToolsVersion = 7.3;
+					};
+					AB0C78B21CE3538C00ADE4A5 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = AB050C0A1CDA33380002A331;
 					};
 				};
 			};
@@ -146,6 +200,7 @@
 			projectRoot = "";
 			targets = (
 				AB050C0A1CDA33380002A331 /* Oglo2 */,
+				AB0C78B21CE3538C00ADE4A5 /* Oglo2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -158,6 +213,13 @@
 				AB050C1A1CDA33380002A331 /* LaunchScreen.storyboard in Resources */,
 				AB050C171CDA33380002A331 /* Assets.xcassets in Resources */,
 				AB050C151CDA33380002A331 /* Oglo2-Prefix.pch in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB0C78B11CE3538C00ADE4A5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -175,7 +237,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AB0C78AF1CE3538C00ADE4A5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB0C78B61CE3538C00ADE4A5 /* Oglo2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB0C78B91CE3538C00ADE4A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB050C0A1CDA33380002A331 /* Oglo2 */;
+			targetProxy = AB0C78B81CE3538C00ADE4A5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		AB050C181CDA33380002A331 /* LaunchScreen.storyboard */ = {
@@ -293,6 +371,30 @@
 			};
 			name = Release;
 		};
+		AB0C78BB1CE3538C00ADE4A5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Oglo2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiway.Oglo2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oglo2.app/Oglo2";
+			};
+			name = Debug;
+		};
+		AB0C78BC1CE3538C00ADE4A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = Oglo2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.appiway.Oglo2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Oglo2.app/Oglo2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -310,6 +412,15 @@
 			buildConfigurations = (
 				AB050C1F1CDA33380002A331 /* Debug */,
 				AB050C201CDA33380002A331 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB0C78BA1CE3538C00ADE4A5 /* Build configuration list for PBXNativeTarget "Oglo2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB0C78BB1CE3538C00ADE4A5 /* Debug */,
+				AB0C78BC1CE3538C00ADE4A5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
