@@ -17,6 +17,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    NSArray *array = @[@"1"];
+    NSString *testFailed = [array objectAtIndex:3];
+    NSLog(@"%@",testFailed);
 }
 
 - (void)didReceiveMemoryWarning {
